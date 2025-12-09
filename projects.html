@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Jason Pham</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Jason Pham</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="resume.html" class="nav-link">Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>
+          A selection of projects that showcase my work in full-stack development,
+          algorithms, and leadership.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-grid">
+
+        <!-- Flashcard App -->
+        <article class="project-card">
+          <h2>Flashcard Learning App with AI Integration</h2>
+          <p class="project-stack">
+            Python · JavaScript · React · FastAPI · PostgreSQL · SQLAlchemy · OpenAI API
+          </p>
+          <p>
+            Full-stack study platform where users create and organize flashcards
+            by subject. Backend built with FastAPI and PostgreSQL, with CRUD
+            operations exposed via RESTful APIs. Integrated the OpenAI API to
+            auto-generate realistic multiple-choice answers and explanations.
+          </p>
+          <div class="project-actions">
+            <a href="#" target="_blank" rel="noopener" class="btn small">Live Demo</a>
+            <a href="https://github.com/jasonpham13" target="_blank" rel="noopener" class="btn ghost small">
+              View Code
+            </a>
+          </div>
+        </article>
+
+        <!-- JavaFX DS Visualizer -->
+        <article class="project-card">
+          <h2>JavaFX Data Structures & Algorithms Visualizer</h2>
+          <p class="project-stack">
+            Java · JavaFX · JUnit · OOP · Git
+          </p>
+          <p>
+            Led a team to build an interactive JavaFX application that visualizes
+            queues, stacks, linked lists, BFS, DFS, insertion sort, and selection
+            sort. Implemented step-by-step timelines, run-through modes, and
+            animations that highlight pointer movement, swaps, and traversal order.
+            Achieved 100% code coverage with comprehensive JUnit tests.
+          </p>
+          <div class="project-actions">
+            <a href="#" target="_blank" rel="noopener" class="btn small">Demo Video</a>
+            <a href="https://github.com/jasonpham13" target="_blank" rel="noopener" class="btn ghost small">
+              View Code
+            </a>
+          </div>
+        </article>
+
+        <!-- HackPath -->
+        <article class="project-card">
+          <h2>HackPath Student Organization</h2>
+          <p class="project-stack">
+            Leadership · Event Management · Mentorship
+          </p>
+          <p>
+            Co-founded a technology-focused student organization whose mission is
+            to help students break into the tech industry. Organized tech talks
+            with alumni, skills workshops, and project teams that operate like
+            real software groups building full applications together.
+          </p>
+          <div class="project-actions">
+            <a href="#" target="_blank" rel="noopener" class="btn small">Learn More</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>© <span id="year"></span> Jason Pham</span>
+      <div class="footer-links">
+        <a href="mailto:jasonpham0605@gmail.com">Email</a>
+        <a href="https://github.com/jasonpham13" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jasonpham13" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
