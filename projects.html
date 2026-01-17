@@ -5,13 +5,11 @@
   <title>Projects | Jason Pham</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="logo">Jason Pham</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
       <nav class="nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
@@ -25,72 +23,96 @@
     <section class="page-header">
       <div class="container">
         <h1>Projects</h1>
-        <p>
-          A selection of projects that showcase my work in full-stack development,
-          algorithms, and leadership.
-        </p>
+        <p>Selected projects demonstrating full-stack development, systems programming, and problem-solving.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container project-grid">
 
-        <!-- Flashcard App -->
+        <!-- FLASHCARD PROJECT -->
         <article class="project-card">
           <h2>Flashcard Learning App with AI Integration</h2>
           <p class="project-stack">
-            Python · JavaScript · React · FastAPI · PostgreSQL · SQLAlchemy · OpenAI API
+            React · FastAPI · PostgreSQL · OpenAI API
           </p>
+
           <p>
-            Full-stack study platform where users create and organize flashcards
-            by subject. Backend built with FastAPI and PostgreSQL, with CRUD
-            operations exposed via RESTful APIs. Integrated the OpenAI API to
-            auto-generate realistic multiple-choice answers and explanations.
+            A full-stack study platform that allows users to create subjects, organize decks,
+            and study using interactive flashcards or quiz mode. The quiz feature integrates AI
+            to generate realistic multiple-choice answers.
           </p>
+
+          <!-- Embedded video -->
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/4TdnK_UYwb4"
+              title="Flashcard App Demo"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <div class="project-actions">
-            <a href="#" target="_blank" rel="noopener" class="btn small">Live Demo</a>
-            <a href="https://github.com/jasonpham13" target="_blank" rel="noopener" class="btn ghost small">
+            <a
+              href="https://youtu.be/4TdnK_UYwb4"
+              target="_blank"
+              rel="noopener"
+              class="btn primary"
+            >
+              Watch on YouTube
+            </a>
+            <a
+              href="https://github.com/jasonpham13"
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+            >
               View Code
             </a>
           </div>
         </article>
 
-        <!-- JavaFX DS Visualizer -->
+        <!-- DSA VISUALIZER -->
         <article class="project-card">
-          <h2>JavaFX Data Structures & Algorithms Visualizer</h2>
+          <h2>Data Structures & Algorithms Visualizer</h2>
           <p class="project-stack">
-            Java · JavaFX · JUnit · OOP · Git
+            Java · JavaFX · JUnit · OOP
           </p>
+
           <p>
-            Led a multi-member team building an interactive JavaFX application that visualizes core data structures
-            and algorithms (queues, stacks, linked lists, BFS/DFS, insertion/selection sort).
-            Developed step-by-step execution timelines, run-through modes, and real-time animations to illustrate
-            operations (pointer movement, swaps, traversal order).
-            Oversaw code reviews, managed Git workflows, delegated tasks, and ensured consistency across models/animations.
-            Reached 100% code coverage through comprehensive JUnit test suites.
+            An interactive JavaFX application that visualizes core data structures and algorithms,
+            including stacks, queues, linked lists, BFS, DFS, and sorting algorithms. Built to help
+            students understand algorithm behavior step-by-step.
           </p>
+
+          <!-- Embedded video -->
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/7IeKWHiz8Jc"
+              title="DSA Visualizer Demo"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <div class="project-actions">
-            <a href="#" target="_blank" rel="noopener" class="btn small">Demo Video</a>
-            <a href="https://github.com/jasonpham13" target="_blank" rel="noopener" class="btn ghost small">
+            <a
+              href="https://youtu.be/7IeKWHiz8Jc"
+              target="_blank"
+              rel="noopener"
+              class="btn primary"
+            >
+              Watch on YouTube
+            </a>
+            <a
+              href="https://github.com/jasonpham13"
+              target="_blank"
+              rel="noopener"
+              class="btn ghost"
+            >
               View Code
             </a>
-          </div>
-        </article>
-
-        <!-- HackPath -->
-        <article class="project-card">
-          <h2>HackPath Student Organization</h2>
-          <p class="project-stack">
-            Leadership · Event Management · Mentorship
-          </p>
-          <p>
-            Co-founded a technology-focused student organization whose mission is
-            to help students break into the tech industry. Organized tech talks
-            with alumni, skills workshops, and project teams that operate like
-            real software groups building full applications together.
-          </p>
-          <div class="project-actions">
-            <a href="#" target="_blank" rel="noopener" class="btn small">Learn More</a>
           </div>
         </article>
 
@@ -103,10 +125,14 @@
       <span>© <span id="year"></span> Jason Pham</span>
       <div class="footer-links">
         <a href="mailto:jasonpham0605@gmail.com">Email</a>
-        <a href="https://github.com/jasonpham13" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/jasonpham13" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jasonpham13" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jasonpham13" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
